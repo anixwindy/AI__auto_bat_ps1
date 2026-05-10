@@ -1,3 +1,4 @@
+
 Set-Location D:\Cthis
 Write-Host ""
 Write-Host "進入 Codex 後請貼上："
@@ -10,6 +11,9 @@ Write-Host "Get-Item "$env:USERPROFILE\.codex\history.jsonl" | Select-Object Nam
 Write-Host ""
 Write-Host "Codex CLI history.jsonl 已清空。"
 Write-Host ""
+
+
+
 
 
 
