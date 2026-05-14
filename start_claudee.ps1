@@ -12,4 +12,4 @@ Write-Host ""
 
 
 claude --permission-mode default
-claude --add-dir D:\Cthis --disallowedTools "Bash"
+claude --add-dir D:\Cthis
