@@ -10,4 +10,4 @@ Clear-Host
 
 # 3. 暴力製程交接 (Bypass PowerShell TTY Interception)
 # 利用 cmd /c 強制剝離 PowerShell 的流攔截，讓 agy 直接綁定最底層的 Windows Terminal
-cmd /c agy
+cmd /c agy -i "載入 Antigravity.md"
