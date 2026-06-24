@@ -1,8 +1,12 @@
 @echo off
-title DeepCode 導航啟動器
+:: 強制鎖定當前發射器標題
+title deepseek_launcher
 cls
 
-echo [+] 正在啟動 PowerShell 並切換至 D:\Cthis...
+echo [+] 正在透過 Windows Terminal 核心拉起滿血獨立環境...
 
-:: 呼叫 Windows 原生 PowerShell，自動執行切換目錄並拉起 deepcode
-powershell -NoExit -Command "Set-Location 'D:\Cthis'; deepcode"
+:: 呼叫 wt 開啟新分頁，--suppressApplicationTitle 徹底剥奪後續程式改標題的權限
+:: 指向同資料夾下的 deepseek.ps1 執行檔
+wt --title "deepseek" --suppressApplicationTitle powershell -NoProfile -ExecutionPolicy Bypass -File "D:\Cthis\deepseek.ps1"
+
+exit
